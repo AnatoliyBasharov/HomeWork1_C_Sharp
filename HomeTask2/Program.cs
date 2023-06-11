@@ -13,20 +13,11 @@ int a = Convert.ToInt32(NumberOne);
 int b = Convert.ToInt32(NumberTwo);
 int c = Convert.ToInt32(NumberThree);
 int sum = a;
-if(a > b)
-if(a > c)
-{   
-Console.WriteLine($"Максимальное число {a}");
-} 
-if(b > a)
-if(b > c)
+if(sum < b)
+sum = b;
+if(sum < c)
+sum = c;
 {
-    Console.WriteLine($"Максимальное число {b}"); 
-
-}
-if(c > a)
-if(c > b){
-    Console.WriteLine($"Максимальное число {c}"); 
-
+Console.WriteLine($"Максимальное число {sum}");
 }
 
